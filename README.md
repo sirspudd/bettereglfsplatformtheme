@@ -42,3 +42,7 @@ QT_DEBUG_PLUGINS=1 QT_QPA_PLATFORMTHEME=bettereglfsplatformtheme ./your_qt_app
 ## License
 
 MIT License — see [LICENSE](LICENSE). Copyright (c) 2026 Donald Carr (d@chaos-reins.com).
+
+## Debugging
+
+export QT_LOGGING_RULES=qt.qpa.bettereglfsplatformtheme.debug=true

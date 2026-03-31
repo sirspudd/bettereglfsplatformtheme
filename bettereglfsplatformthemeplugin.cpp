@@ -8,8 +8,10 @@
 QPlatformTheme *BetterEglfsPlatformThemePlugin::create(const QString &key, const QStringList &)
 {
     if (key.compare(QStringLiteral("bettereglfsplatformtheme"), Qt::CaseInsensitive) == 0) {
-        qDebug() << "bettereglfsplatformtheme is in play";
+        qCDebug(betterEGLFSPlaformTheme) << "bettereglfsplatformtheme is in play";
         return new BetterEglfsPlatformTheme;
     }
     return nullptr;
 }
+
+Q_LOGGING_CATEGORY(betterEGLFSPlaformTheme, "qt.qpa.bettereglfsplatformtheme")
